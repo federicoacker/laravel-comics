@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section("content")
-Test
+@include('partials.hero')
 @endsection

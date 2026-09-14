@@ -4,7 +4,7 @@
     @endphp
     <div class="container h-100">
         <nav class="navbar navbar-expand-lg bg-body-tertiary align-items-stretch h-100">
-            <a class="navbar-brand" href="{{ route("homepage") }}">
+            <a class="navbar-brand d-flex justify-content-center align-items-center me-0" href="{{ route("homepage") }}">
                 <img class="img-fluid" src="{{ Vite::asset("resources/img/dc-logo.png") }}" />
             </a>
             <div class="collapse navbar-collapse align-items-stretch justify-content-end h-100"

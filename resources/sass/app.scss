@@ -7,35 +7,60 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
-.main-header{
-    height:15vh;
+
+//Header
+.main-header {
+    min-height: 15vh;
 }
 
-.nav-link{
-    position:relative;
-    height:100%;
-    font-size:1rem;
-    align-content:center;
+.nav-link {
+    position: relative;
+    height: 100%;
+    font-size: 1rem;
+    align-content: center;
 }
-.nav-link::after{
-    content:"";
-    width:75%;
-    height:0.5rem;
-    background-color: transparent;
-    position:absolute;
-    bottom:0;
-    left:50%;
-    translate: -50% 75%;
-    transition: background-color 0.5s ease;
-}
+
 .nav-link.active,
-.nav-link:hover{
-    color:#4994F9 !important;
-    transition:color 0.5s ease;
+.nav-link:hover {
+    color: #4994F9 !important;
+    transition: color 0.5s ease;
 }
-.nav-link:hover::after{
-    background-color: #4994F9;
+
+
+//Hero
+.hero{
+    img {
+        display:block;
+        width:100%;
+        max-height:40vh;
+        object-fit:cover;
+        object-position:100% 0;
+    }
 }
-.nav-link.active::after{
-    background-color: #4994F9;
+
+//Media Queries
+
+@media screen and (min-width:992px) {
+    .main-header{
+        height:15vh;
+    }
+    .nav-link::after {
+        content: "";
+        width: 75%;
+        height: 0.5rem;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 100%;
+        transition: background-color 0.5s ease;
+    }
+
+    .nav-link:hover::after {
+        background-color: #4994F9;
+    }
+
+    .nav-link.active::after {
+        background-color: #4994F9;
+    }
 }
