@@ -46,7 +46,7 @@
                 <div class="col-6 col-lg-2 d-flex align-items-center ">
                     <button class="button-sign-up flex-grow-1">SIGN-UP NOW</button>
                 </div>
-                <div class="col-6 d-flex align-items-center media-wrapper">
+                <div class="col-6 d-flex align-items-center media-wrapper justify-content-end">
                     <h3 class="mb-0 follow-title">FOLLOW US</h3>
                     <a><img class="media-link" src="{{ Vite::asset("resources/img/footer-facebook.png") }}"></a>
                     <a><img class="media-link" src="{{ Vite::asset("resources/img/footer-twitter.png") }}"></a>

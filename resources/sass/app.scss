@@ -16,6 +16,10 @@
     min-height: 15vh;
     z-index: 999;
 }
+.brand-img{
+    max-height:100%;
+    width:auto;
+}
 
 .nav-link {
     position: relative;
@@ -205,6 +209,17 @@
 .media-link:hover{
     border-color:white;
     cursor:pointer;
+}
+
+//Filler
+.filler{
+    background-color:#1C1C1C;
+    width:100%;
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
 }
 
 //Media Queries
