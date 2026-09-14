@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
 @section("content")
-@include('partials.hero')
+<div class="d-flex flex-column main-wrapper">
+    @include('partials.hero')
+    @include('partials.series')
+</div>
 @endsection

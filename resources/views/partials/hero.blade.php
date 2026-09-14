@@ -1,3 +1,3 @@
-<div class="hero">
+<section class="hero">
     <img src="{{ Vite::asset("resources/img/jumbotron.jpg") }}"/>
-</div>
+</section>

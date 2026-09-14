@@ -10,6 +10,9 @@
 
 //Header
 .main-header {
+    background-color:#F8F9FA;
+    position:sticky;
+    top:0;
     min-height: 15vh;
 }
 
@@ -25,7 +28,10 @@
     color: #4994F9 !important;
     transition: color 0.5s ease;
 }
-
+//Main-Wrapper
+.main-wrapper{
+    min-height:70vh;
+}
 
 //Hero
 .hero{
@@ -36,6 +42,46 @@
         object-fit:cover;
         object-position:100% 0;
     }
+}
+
+//Series
+.series{
+    width:100%;
+    background-color:#1C1C1C;
+}
+.series>.container{
+    position:relative;
+}
+.series>.container::before{
+    content:"Current Series";
+    position:absolute;
+    background-color: #0282F9;
+    font-size:2rem;
+    padding:0.5rem 0.5rem;
+    color:white;
+    top:0;
+    left:0;
+    translate: 0 -100%;
+}
+
+.series-button{
+    background-color: #0282F9;
+    padding: 0.5rem 2rem;
+    font-size:1rem;
+    color:white;
+    outline: none;
+    border:none;
+    display:block;
+    margin: 1rem auto;
+}
+
+//Comics
+.comic-thumb{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    object-position:100% 0;
+    border-radius: 0;
 }
 
 //Media Queries
