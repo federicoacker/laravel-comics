@@ -3,6 +3,7 @@
 @endphp
 
 <div class="footer-wrapper">
+    @include('partials.extras')
     <section class="footer-links-section">
         <div class="container">
             <div class="d-flex footer-links py-4">
